@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home_page'
+    'homepage'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'bookcast.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -92,7 +92,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'zh-Hans'# 'en-us'
 
-TIME_ZONE = 'Aisa/shanghai'# 'UTC'
+TIME_ZONE = 'Asia/Shanghai'# 'UTC'
 
 USE_I18N = True
 
